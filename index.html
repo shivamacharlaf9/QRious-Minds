@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRious Minds</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>QRious Minds</h1>
+    </header>
+    <main>
+        <section id="text-to-qr">
+            <h2>Text to QR Code</h2>
+            <input type="text" id="text-input" placeholder="Enter text">
+            <button onclick="generateQRCode()">Generate QR Code</button>
+            <div id="qr-code"></div>
+        </section>
+        <section id="qr-to-text">
+            <h2>QR Code Reader</h2>
+            <input type="file" id="qr-input" accept="image/*" onchange="readQRCode()">
+            <div id="qr-result"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
